@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,7 +23,6 @@
     height: 50vw;
     text-align: center;
     font-family: 'Indie Flower', cursive;
-    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,6 @@
     align-items: center;
     justify-content: flex-end;
     background-color: #fdf5dd;
-    /* overflow: hidden; */
 }
 
 .user-name {
@@ -61,7 +60,7 @@
 }
 
 .user-about {
-    font-size: 1.7vw;
+    font-size: 1.9vw;
     opacity: 0.6;
 }
 
@@ -88,26 +87,24 @@
     top: -40%;
 }
 
-.following::before {
+.following::before,
+.stories::before {
     display: block;
     content: "";
-    width: 0.8%;
+    width: 0.6%;
     height: 145%;
     background-color: rgb(145, 145, 145);
     position: absolute;
+}
+
+.following::before {
     top: -40%;
     left: 35%;
 }
 
 .stories::before {
-    display: block;
-    content: "";
-    width: 0.8%;
-    height: 145%;
-    background-color: rgb(145, 145, 145);
-    position: absolute;
     top: -40%;
-    left: 66%;
+    left: 65.5%;
 }
 
 .counter-quantity {
