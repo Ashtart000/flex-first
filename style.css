@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/5594016.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    width: 30vw;
+    height: 50vw;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-background {
+    min-height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.card-user {
+    width: 13vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.card-content {
+    min-height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fdf5dd;
+    /* overflow: hidden; */
+}
+
+.user-name {
+    font-size: 2.7vw;
+    line-height: 1em;
+}
+
+.user-about {
+    font-size: 1.7vw;
+    opacity: 0.6;
+}
+
+.counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    margin-bottom: 8%;
+    position: relative;
+}
+
+.counter-width {
+    width: 22%;
+}
+
+.counter::before {
+    display: block;
+    content: "";
+    width: 25vw;
+    height: 5%;
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    top: -40%;
+}
+
+.following::before {
+    display: block;
+    content: "";
+    width: 0.8%;
+    height: 145%;
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    top: -40%;
+    left: 35%;
+}
+
+.stories::before {
+    display: block;
+    content: "";
+    width: 0.8%;
+    height: 145%;
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    top: -40%;
+    left: 66%;
+}
+
+.counter-quantity {
+    font-size: 3vw;
+    line-height: 0.5em;
+}
+
+.counter-name {
+    font-size: 1.5vw;
+    opacity: 0.6;
+}
